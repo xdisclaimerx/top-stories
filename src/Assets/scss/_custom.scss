@@ -1,0 +1,48 @@
+.banner {
+  display: block;
+  height: 300px;
+
+  .logo {
+    background: url('https://assets.rappler.com/7A90BD2991EB48D39523B78A79568863/img/8A17AE27780446319B62B7EA7BC3F1DC/RAPPLER_LOGO_basic.png') no-repeat;
+    height: 100%;
+    background-size: 20%;
+  }
+
+  h1 {
+    margin-left: 30%;
+    padding-top: 7%;
+    font-family: 'Lato';
+  }
+}
+
+header {
+  display: block;
+
+  .carousel {
+    width: 750px;
+    margin: auto;
+  }
+
+  .carousel-indicators {
+    position: absolute;
+    li {
+      width: auto;
+      p {
+        width: 200px
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+.stories{
+  height: 100%;
+  padding: 10% 0;
+
+  .container{
+    padding: 3rem 1.5rem;
+    text-align: center;
+    color:$grey;
+  }
+}
