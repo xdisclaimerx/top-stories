@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import TinySlider from "tiny-slider-react";
 
 class Stories extends Component {
   constructor(props) {
@@ -24,10 +25,14 @@ class Stories extends Component {
 
  render() {
    const { stories } = this.state;
-
+   const settings = {
+    lazyload: true,
+    nav: false,
+    mouseDrag: true
+  };
    return (
 
-      <div className="my-slider">
+      <TinySlider settings={settings}>
        {
          stories.map(story => (
 
@@ -38,7 +43,7 @@ class Stories extends Component {
            </div>
          ))
        }
-      </div>
+      </TinySlider>
 
    );
  }
